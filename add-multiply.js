@@ -1,14 +1,20 @@
-// add
-function add(num1, num2) {
-    const sum = num1 + num2;
-    return sum;
+// wood calculator
+/* 
+  chairWood = 3cft
+  tableWood = 10cft
+  bedWodd = 50cft
+ */
+function woodCalculator(chairQuantity, tableQuantity, bedQuantity) {
+    const perChairWood = 3;
+    const perTableWood = 10;
+    const perBedWood = 50;
+    // calculation
+    const chairWoodQuantity = chairQuantity * perChairWood;
+    const tableWoodQuantity = tableQuantity * perTableWood;
+    const bedWoodQuantity = bedQuantity * perBedWood;
+    // total
+    const totalWood = chairWoodQuantity + tableWoodQuantity + bedWoodQuantity;
+    return totalWood;
 }
-const total1 = add(23, 20);
-console.log(total1);
-// multiply
-function multiply(numbr1, numbr2) {
-    const multiply = numbr1 * numbr2;
-    return multiply;
-}
-const total2 = multiply(20, 5);
-console.log(total2);
+const totalWoodResult = woodCalculator(1, 1, o);
+console.log('total wood result is :', totalWoodResult);

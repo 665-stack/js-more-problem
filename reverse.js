@@ -13,7 +13,7 @@ const reversed = reverseString(greetings);
 console.log(reversed);
 
 // another one example
-/* const greetings2 = 'I love you';
+const greetings2 = 'I love you';
 let reverse2 = '';
 function reverseString2(text2) {
     for (const char of text2) {
@@ -24,4 +24,4 @@ function reverseString2(text2) {
     return reverse2;
 }
 const reversed2 = reverseString2(greetings2);
-console.log(reversed2); */
+console.log(reversed2);

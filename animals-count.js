@@ -15,3 +15,32 @@ function animalCount(miles) {
 }
 const animalForMiles = animalCount(34);
 console.log(animalForMiles);
+// another way
+function praniCount(miles1) {
+    const animaleDensityFirst10Miles = 10;
+    const animaleDensitySecond10Miles = 50;
+    const animalDensityRestMiles = 100;
+    if (miles1 <= 10) {
+        const count = miles1 * animaleDensityFirst10Miles;
+        return count;
+    }
+    else if (miles1 <= 20) {
+        const first10 = 10 * animaleDensityFirst10Miles;
+        const restMiles = miles1 - 10;
+        const second10 = restMiles * animaleDensitySecond10Miles;
+        const totalAnimal2 = first10 + second10;
+        return totalAnimal2;
+    }
+    else {
+        const first10 = 10 * animaleDensityFirst10Miles;
+        const second10 = 10 * animaleDensitySecond10Miles;
+        const restMiles = miles1 - 20;
+        const restdenseAnimal = restMiles * animalDensityRestMiles;
+        const totalAnimal2 = first10 + second10 + restdenseAnimal;
+        return totalAnimal2;
+
+    }
+
+}
+const praniForMiles1 = praniCount(34);
+console.log('another way', praniForMiles1);
